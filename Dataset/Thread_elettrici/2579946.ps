@@ -1,0 +1,7 @@
+```json
+{
+  "problema": "Il motore/pompa non si avvia in nessuna modalità (automatica o bypass). Quando il contattore locale viene attivato manualmente, il motore ronza rumorosamente ma non gira.",
+  "contesto": "Il sistema è composto da un motore a induzione trifase da 5 HP, 480V, collegato a una pompa per riempire un serbatoio. Sono presenti due contattori in serie: uno remoto e uno locale. Il contattore remoto ha una bobina a 24VDC e un relè di sovraccarico, controllato da sensori di livello o da un interruttore bypass. Il contattore locale ha una bobina a 480VAC e un relè di sovraccarico, con un selettore on/off in serie; l'alimentazione per la sua bobina proviene dalla tensione di linea fornita dal contattore remoto. Le verifiche iniziali hanno mostrato che la tensione in ingresso e la tensione di controllo erano OK, il motore non presentava circuiti aperti, cortocircuiti o dispersioni, e le sue connessioni erano OK. La pompa non era bloccata, il rotore girava liberamente. I contattori locali e remoti, ispezionati e testati a banco con un misuratore, erano stati inizialmente giudicati OK.",
+  "soluzione": "È stato determinato che i contatti della fase A del contattore remoto non si chiudevano correttamente quando la bobina era eccitata (pur chiudendosi manualmente), causando un'alimentazione monofase al motore e impedendo al contattore locale (a valle) di attivarsi elettricamente. La soluzione è stata la sostituzione del contattore remoto difettoso."
+}
+```

@@ -1,0 +1,15 @@
+```json
+{
+    "problema": "Il sistema di protezione del circuito per la pompa #4 non interviene nonostante un corto circuito a terra sulla fase B del motore e un assorbimento di corrente di 285 Ampere.",
+    "contesto": "La stazione di pompaggio utilizza un motore/pompa da 40 hp, 3 fasi, 208V. La catena di protezione per la Pompa #4 include: un sezionatore fusibile da 200A, un interruttore da 200A, un interruttore da 150A e uno starter Allen Bradley con un relè di sovraccarico termico da 130A. Il motore ha avuto problemi simili in passato (fase B con corrente elevata). Attualmente, la fase B assorbe 285 Ampere (verificato con tre amperometri), mentre le fasi A e C non assorbono corrente. Un corto circuito netto è misurato sulla fase B con un ohmmetro. La corrente di esercizio normale per ciascuna fase è di 85-92 Ampere. Il sistema ha funzionato per circa 3 ore con 285 Ampere sulla fase B senza che le protezioni intervenissero. Durante i test, la condizione di 285 Ampere è stata osservata per oltre 3 minuti senza intervento delle protezioni. Il Full Load Amperage (FLA) tipico per un motore da 40HP a 208V è di circa 114 Ampere. Il relè di sovraccarico termico da 130A è impostato a un valore superiore al FLA tipico. L'interruttore da 150A è probabilmente un tipo Instantaneous Trip (MCP), che interviene solo per correnti molto elevate (10-17 volte il FLA).",
+    "soluzione": [
+        "Verificare se le protezioni di sovraccarico termico sono impostate in modalità \"Auto Reset\".",
+        "Recuperare i dati di targa specifici del motore e della pompa (FLA, classe di sovraccarico).",
+        "Regolare l'impostazione del relè di sovraccarico termico (attualmente 130A) basandosi sul FLA del motore (valore tipico per un 40HP 208V è 114A) e sulla classe di intervento appropriata (tipicamente Classe 10 per pompe).",
+        "Verificare e, se necessario, regolare le impostazioni dell'interruttore di circuito (MCP) da 150A.",
+        "Scollegare le fasi e misurare la resistenza a terra di ogni fase direttamente al motore.",
+        "Etichettare l'interno del quadro elettrico con i dati corretti del motore e le impostazioni delle protezioni.",
+        "Implementare misure per prevenire manomissioni delle impostazioni delle protezioni (es. coperture o sigilli)."
+    ]
+}
+```

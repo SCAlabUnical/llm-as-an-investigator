@@ -1,0 +1,9 @@
+```json
+{
+  "problema": "Guasto prematuro di apparecchi di illuminazione a LED di un parcheggio, dovuto alla sensibilità dei driver LED all'alta tensione.",
+  "contesto": "L'impianto di illuminazione del parcheggio è alimentato da una fonte trifase a 480V. Gli apparecchi sono progettati per operare a 277/480V e sono attualmente collegati a 480V. Le luci funzionanti ricevono 487V, mentre quelle che falliscono ricevono 492V. Le tensioni fase-neutro misurate sono: Fase A 288V, Fase B 287V, Fase C 287V. Le luci guaste sono a varie distanze dalla fonte di alimentazione (da 20 piedi a 100 iarde). I driver LED sono specificati come 277-480V. Vi è il sospetto che i driver, pur etichettati con questa gamma, possano essere stati progettati con una tolleranza limitata (es. per sistemi 400Y230V) e siano vulnerabili a sovratensioni che rientrano nei limiti di tolleranza tipici delle utility (+5% della tensione nominale).",
+  "soluzione": "1.  **Conversione a 277V:** Riconfigurare l'alimentazione degli apparecchi a 277V, collegando uno dei conduttori di fase alla barra del neutro e selezionando l'impostazione a 277V sul driver dell'apparecchio (se prevede 'tap' specifici). Questa conversione può offrire un maggiore margine di tolleranza alle fluttuazioni di tensione, ma aumenterà la corrente e la caduta di tensione sui conduttori, che devono essere adeguatamente dimensionati.
+2.  **Regolazione della tensione:** Installare un trasformatore buck/boost per ridurre la tensione di alimentazione complessiva a un livello più stabile e sicuro (es. 460V).
+3.  **Verifica delle specifiche:** Esaminare le specifiche tecniche dettagliate del driver LED per comprendere le tolleranze di tensione esatte e le modalità di funzionamento (gamma continua o 'tap' selezionabili)."
+}
+```

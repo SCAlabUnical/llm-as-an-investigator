@@ -1,0 +1,12 @@
+```json
+{
+  "problema": "Il circuito di illuminazione con interruttori 3-way, 4-way, 3-way per l'ufficio nel garage non funziona correttamente; in particolare, l'attivazione dell'ultimo interruttore 3-way rende inoperativi gli altri interruttori. Si rileva una tensione anomala di circa 10V su uno dei cavi traveler (rosso) dell'interruttore 3-way remoto.",
+  "contesto": "L'impianto elettrico si trova in una fattoria di 200 anni. L'area del garage è stata cablata con cavi NM senza messa a terra, alcuni dei quali in scatole di acciaio non messe a terra. Una ristrutturazione di 25 anni fa ha introdotto due nuove scatole di giunzione da 4 pollici, difficilmente accessibili, contenenti 3 circuiti, in seguito all'installazione di una nuova porta. Tutti gli interruttori del circuito sono stati sostituiti. Le misurazioni di tensione sul primo interruttore 3-way e sul 4-way sono risultate normali con un tester analogico, ma sull'interruttore 3-way remoto, il cavo traveler bianco mostrava i valori attesi (0V o 120V), mentre il cavo traveler rosso misurava circa 10V (utilizzando il telaio della porta del garage come riferimento di terra). I tentativi di tracciatura del cavo traveler rosso e di altri cavi (de-energizzati) con un Klein Tools Tone & Probe Test and Trace Kit e un Harbor Freight Cen-Tech Cable Tracker non hanno avuto successo, con un tono significativamente più debole su un singolo filo.",
+  "soluzione": [
+    "Utilizzare un multimetro Lo-Z per ottenere letture di tensione accurate su fili potenzialmente 'flottanti' nelle sezioni senza messa a terra dell'impianto.",
+    "Eseguire test di continuità (misurazioni in Ohm) su tutti i conduttori, dopo aver separato i gruppi di cavi in ogni scatola degli interruttori e nel corpo illuminante, per identificare eventuali interruzioni o errati collegamenti tra le scatole.",
+    "Verificare la configurazione del cablaggio in ogni interruttore (primo 3-way, 4-way, 3-way remoto) rispetto allo schema standard di un circuito 3-way 'dead end'. Assicurarsi che il filo comune dell'interruttore 3-way remoto riceva una tensione costante di 120V e che tutti i cavi 'traveler' e 'switch leg' siano terminati correttamente.",
+    "Se la distanza tra l'interruttore 4-way e l'ultimo 3-way è inferiore a 30 piedi, considerare la sostituzione dell'interruttore 4-way con un interruttore wireless Lutron Caseta e l'installazione di un interruttore remoto Pico (wireless) nella posizione del 3-way remoto, eliminando così la necessità del cablaggio esistente."
+  ]
+}
+```

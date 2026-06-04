@@ -1,0 +1,7 @@
+```json
+{
+  "problema": "Il main breaker dell'impianto elettrico scatta ogni volta che viene acceso il breaker numero 14.",
+  "contesto": "La casa è stata costruita 10-15 anni fa e utilizza un sistema ITE Siemens senza AFCI. Il problema si manifesta da alcuni anni. Una misurazione ha rilevato una tensione di 122.4V tra il terminale del breaker #14 (quando spento) e la barra del neutro. È stato identificato che il breaker #11, etichettato 'Kitchen outlets', è collegato al circuito del breaker #14, etichettato 'Kitchen hall bath basement lights', poiché spegnere il breaker #11 interrompe la tensione sul terminale del breaker #14. I due circuiti sono su fasi opposte (#11 è un 20A con cavo 12ga, #14 è un 15A con cavo 14ga). Due anni prima, la cucina era stata ristrutturata con la sostituzione di dispositivi elettrici. È presente un interruttore a torre a destra del lavello, dove la parte superiore controlla la luce incassata sopra il lavello e la parte inferiore il tritarifiuti.",
+  "soluzione": "Il problema è stato causato dal mancato distacco della linguetta (tab) di separazione tra i due interruttori di un interruttore a torre (stacked switch) in cucina, durante una ristrutturazione. Questo ha collegato il circuito delle luci della cucina (breaker #14) con il circuito delle prese della cucina (breaker #11), che sono alimentati da fasi opposte, generando un cortocircuito fase-fase che fa scattare il main breaker. La soluzione consiste nel rompere la linguetta sull'interruttore a torre per isolare correttamente i due circuiti."
+}
+```

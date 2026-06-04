@@ -1,0 +1,7 @@
+```json
+{
+    "problema": "Le tensioni misurate tra le fasi e la messa a terra sono anomale e sbilanciate, e la tensione tra il neutro e la messa a terra non è prossima a zero.",
+    "contesto": "Il sistema elettrico include un subpanel alimentato da un trasformatore step-down, configurato come un sistema derivato separatamente. Sono state rilevate le seguenti misurazioni di tensione: Fase A-B: 208V, Fase A-C: 208V, Fase B-C: 208V. Fase A-Neutro: 120V, Fase B-Neutro: 120V, Fase C-Neutro: 120V. Fase A-Terra: 100V, Fase B-Terra: 127V, Fase C-Terra: 134V. Tensione Neutro-Terra: 19-20V. Le tensioni fase-fase e fase-neutro sono nominali, mentre le tensioni fase-terra e neutro-terra sono irregolari.",
+    "soluzione": "È necessario installare un ponticello di bonding del sistema (System Bonding Jumper - SBJ) tra il terminale neutro (X0) del trasformatore step-down e la messa a terra. Se il bonding viene effettuato al trasformatore, la vite di bonding all'interno del quadro elettrico a valle deve essere rimossa. Inoltre, è richiesto un supply-side bonding jumper tra il trasformatore e il primo dispositivo di protezione da sovracorrente (OCPD)."
+}
+```

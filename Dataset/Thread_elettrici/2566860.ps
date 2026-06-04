@@ -1,0 +1,16 @@
+```json
+{
+  "problema": "Una delle unità di trattamento aria (AHU) subisce un'eccessiva e rapida perdita di motori e drive (VFD).",
+  "contesto": "La struttura è un ospedale di 10 anni con 3 unità di trattamento aria (AHU) che funzionano 24/7. Ogni AHU ha 18 motori da 10HP, con 9 motori alimentati da un singolo VFD ABB a 480V. L'unità problematica presenta tutti i conduttori dei motori in un'unica tubazione da 2.5 pollici che va al gruppo ventole e poi a una canalina sulla parete delle ventole. I problemi si manifestano e peggiorano quando un motore si guasta, causando il blocco del VFD. Sono stati sostituiti sia i drive che i motori. Sono stati riscontrati vari tipi di guasti, inclusi guasti a terra (non rilevabili con un tester standard), sovracorrente e sottotensione. Ogni motore ha protezioni individuali da sovraccarico che scattano. I generatori di emergenza sono sincronizzati e vengono testati mensilmente con trasferimento completo. I drive dispongono di funzionalità di bypass. Un'unità AHU identica nelle vicinanze, che serve lo stesso spazio, funziona senza problemi. Sono state effettuate letture THD-V e THD-A con un misuratore di potenza Fluke, che verranno confrontate durante un trasferimento generatore. Tutti i motori hanno messe a terra individuali.",
+  "soluzione": [
+    "Aggiungere un reattore di carico sull'uscita del VFD per alimentare più motori, soprattutto per gestire la corrente capacitiva di carica dei numerosi conduttori paralleli e prevenire problemi di isolamento.",
+    "Verificare che il VFD sia dimensionato per almeno il 110% della corrente nominale totale dei motori (FLA combinati) per gestire la corrente capacitiva di carica.",
+    "Esaminare l'algoritmo di 'avvio in volo' del VFD; considerare l'uso di un metodo di avvio a 'tempo costante' che arresta i motori con una corrente DC prima di riavviarli, per evitare guasti in presenza di ventole che ruotano a velocità diverse o ferme.",
+    "Eseguire un'analisi approfondita dei motori guasti per identificare specifici segni di cedimento, come bruciature simmetriche sulle bobine (che indicano onde riflesse) o danni ai cuscinetti (ad esempio, sfere lucidate/smerigliate o scanalature).",
+    "Considerare l'utilizzo di cavi schermati per VFD per ogni motore o, idealmente, la separazione del cablaggio di ciascun motore dall'unica tubazione comune, per mitigare gli effetti dei campi magnetici e della corrente di modo comune.",
+    "Verificare regolarmente l'equilibratura e le condizioni meccaniche (ad es. rettilineità dell'albero) delle ventole dell'unità di trattamento aria.",
+    "Valutare l'uso di motori TEFC (Totally Enclosed Fan Cooled) all'interno delle AHU per una maggiore protezione.",
+    "Indagare e risolvere la causa dei guasti a terra non rilevabili con un misuratore standard."
+  ]
+}
+```

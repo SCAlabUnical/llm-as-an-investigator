@@ -1,0 +1,14 @@
+```json
+{
+  "problema": "Difficoltà nella risoluzione avanzata di problemi di scatto intermittente e imprevedibile degli interruttori di circuito AFCI (Arc Fault Circuit Interrupter) e GFCI (Ground Fault Circuit Interrupter).",
+  "contesto": "Il problema si manifesta con interruzioni sporadiche e imprevedibili, a differenza di quelle costanti o legate a scenari specifici (es. cortocircuiti a bassa impedenza o neutri combinati), che sono più facili da diagnosticare. Un interruttore Square D Homeline 1 polo 20A Dual Function per un circuito da cucina ha iniziato a scattare occasionalmente, anche dopo la sua sostituzione. L'abitazione dispone di quadri elettrici Siemens installati nel 2012, con un totale di 63 circuiti, di cui 21 AFCI che hanno presentato problemi nel tempo. Inizialmente, la sostituzione degli interruttori AFCI problematici con modelli più recenti forniva una soluzione temporanea per mesi, ma la frequenza degli scatti è aumentata progressivamente, coinvolgendo anche i nuovi interruttori. In un caso specifico, il tripping intermittente è risultato essere causato da un 'rumore' elettrico.",
+  "soluzione": [
+    "**Diagnostica per rumore elettrico:** Utilizzare uno strumento Siemens Intelli-Arc per rilevare il rumore elettrico che si propaga attraverso il sistema e viene interpretato come arco dagli interruttori AFCI. Nel caso specifico, sono stati identificati adattatori ethernet powerline (TRENDnet) su più circuiti come fonte del rumore.",
+    "**Sostituzione dell'interruttore:** Scambiare l'interruttore problematico con uno nuovo o uno funzionante, o scambiare i fili del circuito tra interruttori, per isolare eventuali difetti dell'interruttore stesso. Contattare il produttore per ottenere la versione più recente dell'interruttore.",
+    "**Test di isolamento (Megger):** Eseguire test di isolamento per individuare archi paralleli ad alta impedenza o dispersioni di isolamento. È fondamentale disconnettere tutti i carichi (luci, dimmer, apparecchiature collegate) dal circuito prima del test per evitare danni ai dispositivi o letture false. Non è efficace per archi in serie.",
+    "**Utilizzo di interruttori con codici diagnostici:** Impiegare interruttori con funzionalità diagnostiche avanzate (es. interruttori dual function BR che mostrano 6 tipi di codici di errore specifici: arco in serie, arco in parallelo, sovraccarico, sovratensione, guasto a terra/neutro a terra, fallimento dell'autotest).",
+    "**Eliminazione di dispositivi con soppressori di sovratensione:** In caso di scatti intermittenti di GFCI, rimuovere ciabatte o prese multiple con circuiti di soppressione di sovratensione (es. MOVs Linea-Neutro, Linea-Terra, Neutro-Terra), poiché componenti invecchiati o difettosi possono causare dispersioni.",
+    "**Test sistematico sezione per sezione:** Dividere il circuito in sezioni più piccole per isolare progressivamente la zona del guasto."
+  ]
+}
+```

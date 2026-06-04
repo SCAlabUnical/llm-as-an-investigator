@@ -1,0 +1,24 @@
+```json
+{
+  "problema": "I interruttori AFCI nel seminterrato di una casa scattano in modo casuale e imprevedibile.",
+  "contesto": "La casa ha circa 10-20 anni, con un seminterrato ristrutturato diversi anni fa che include circuiti AFCI per ufficio, pompa di pozzetto (con stampante collegata), prese e luci della sala giochi e fornace a gas. Non ci sono AFCI ai piani superiori. I viaggi si verificano casualmente; ad esempio, un apparecchio in funzione su un circuito può far scattare la fornace su un altro, o l'uso di un aspirapolvere può far scattare un circuito diverso. I vecchi interruttori AFCI (4 unità) sono stati sostituiti, ma il problema persiste. Il cliente è riluttante a rimuovere gli AFCI.",
+  "soluzione": [
+    "Rimuovere la fornace a gas dal circuito AFCI e posizionarla su un proprio circuito da 15A.",
+    "Verificare se gli interruttori AFCI hanno una funzione diagnostica e utilizzarla, assicurandosi che il cliente sappia usarla al reset.",
+    "Ispezionare la connessione dei neutri per ogni circuito per assicurarsi che siano collegati correttamente e non miscelati al quadro o nelle scatole di giunzione.",
+    "Sostituire gli interruttori AFCI con interruttori GFCI per testare eventuali errori di cablaggio o problemi legittimi con i carichi.",
+    "Verificare la presenza di fonti di interferenza RF (es. walkie-talkie, radio amatoriali, sistemi wireless) nelle vicinanze, poiché possono causare scatti intempestivi.",
+    "Contattare il produttore degli AFCI per richiedere filtri speciali per le interferenze, se applicabile.",
+    "Controllare il neutro principale (main neutral) per connessioni allentate.",
+    "Condurre un test di isolamento (megohm test) per verificare problemi di isolamento nel cablaggio.",
+    "Eseguire una procedura di risoluzione dei problemi dettagliata che include:",
+    "1. Raccogliere informazioni sui viaggi (chi ha eseguito cablaggi, alterazioni recenti, creare una pianificazione dettagliata del pannello, registrare quali interruttori scattano e quali apparecchi erano in funzione).",
+    "2. Effettuare un test operativo elettrico accendendo tutte le luci e gli apparecchi, annotando eventuali sfarfallii o rumori e controllando la temperatura degli interruttori.",
+    "3. Testare la polarità elettrica e la caduta di tensione con un 'Ideal Sure Test' per assicurarsi che le connessioni siano corrette e la tensione non scenda sotto 108V (con test di carico per circuiti da 15A, 20A, 30A), e che la caduta di tensione non sia superiore al 14%.",
+    "4. Se i viaggi non sono riproducibili, impostare un registratore di dati per monitorare tensione a terra e corrente sui conduttori di fase, neutro e terra del circuito interessato.",
+    "5. Sostituire temporaneamente gli interruttori AFCI problematici con interruttori GFCI da 30mA Classe B e lasciare il registratore di dati per 30 giorni se non scattano.",
+    "6. Eseguire un test di rigidità dielettrica (1 minuto, 1000 volt) sui circuiti di derivazione (escludendo apparecchi e luminari elencati), tra le parti sotto tensione (incluso il neutro) e il conduttore di terra.",
+    "7. Eseguire un test di messa a terra a punto singolo (Single point grounding Test): spegnere il servizio, scollegare il neutro di servizio, il MBJ e/o il GEC dalla barra del neutro, quindi testare la barra del neutro per continuità verso il GEC con un megger a 250 volt, assicurandosi che non ci siano percorsi paralleli verso terra."
+  ]
+}
+```

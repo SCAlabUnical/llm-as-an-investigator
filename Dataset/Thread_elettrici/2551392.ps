@@ -1,0 +1,7 @@
+```json
+{
+  "problema": "I disgiuntori AFCI (Arc Fault Circuit Interrupter) scattano senza motivo in tre stanze di un seminterrato recentemente rifinito, con un'incidenza maggiore in una delle stanze.",
+  "contesto": "Il seminterrato è dotato di un sistema di automazione completo con interruttori Z-wave in tutte e tre le stanze. L'illuminazione e le prese sono collegate insieme sugli stessi circuiti in ogni stanza. Le letture di un tester Siemens Intelli Arc fluttuano drasticamente quando i dispositivi Z-wave sono attivi e si stabilizzano quando questi vengono bypassati. I disgiuntori AFCI sono stati sostituiti più volte senza risolvere il problema. I problemi di scatto si verificano anche quando non c'è nessuno nel seminterrato o le luci sono spente. Le prese sono collegate a margherita (daisy-chained) ma non con connessioni 'back-stabbed'. I dispositivi Z-wave non sono situati vicino al quadro elettrico. Si ipotizza che i dispositivi Z-wave, in particolare quelli che potrebbero auto-alimentarsi con una piccola corrente di dispersione verso terra (se non richiedono un neutro), possano causare lo scatto della componente di guasto a terra degli AFCI, specialmente se numerosi su un circuito.",
+  "soluzione": "Sostituire temporaneamente il disgiuntore AFCI con un disgiuntore standard e installare una presa AFCI a valle. Verificare la versione dei disgiuntori AFCI e, se necessario, installare la versione più recente. Indagare se i dispositivi Z-wave richiedono un collegamento al neutro o se si auto-alimentano causando dispersione verso terra."
+}
+```
