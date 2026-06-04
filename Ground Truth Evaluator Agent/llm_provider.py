@@ -30,7 +30,7 @@ else:
     provider = "gemini"
 
     client = genai.Client(
-        api_key="AIzaSyBMBZ8rBWldZkujWglSCIAjnUyHJujF8r0"
+        api_key="LA_TUA_GEMINI_KEY"
     )
 
     MODELLO = "gemini-2.5-flash-lite"

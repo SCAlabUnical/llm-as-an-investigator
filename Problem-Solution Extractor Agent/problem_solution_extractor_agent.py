@@ -3,7 +3,7 @@ import sys
 from google import genai
 
 # 🔑 API KEY
-client = genai.Client(api_key="AIzaSyBMBZ8rBWldZkujWglSCIAjnUyHJujF8r0")
+client = genai.Client(api_key="LA_TUA_GEMINI_KEY")
 
 def estrai_info(testo):
     prompt = f"""
