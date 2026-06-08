@@ -3,7 +3,7 @@ import sys
 from google import genai
 
 # 🔑 API KEY
-client = genai.Client(api_key="LA_TUA_GEMINI_KEY")
+client = genai.Client(api_key="YOUR_GEMINI_KEY")
 
 def estrai_info(testo):
     prompt = f"""
@@ -36,7 +36,7 @@ def estrai_info(testo):
     """
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="CHOOSE_MODEL",
         contents=prompt
     )
 
@@ -45,7 +45,7 @@ def estrai_info(testo):
 
 def main():
     if len(sys.argv) < 2:
-        print("Uso: python script.py <percorso_cartella>")
+        print("Use: python script.py <dir_path>")
         return
 
     input_folder = sys.argv[1]
@@ -72,10 +72,10 @@ def main():
                 with open(output_path, "w", encoding="utf-8") as f:
                     f.write(risultato)
 
-                print(f"Creato: {output_filename}")
+                print(f"Created: {output_filename}")
 
             except Exception as e:
-                print(f"Errore con {filename}: {e}")
+                print(f"Error with {filename}: {e}")
 
 
 if __name__ == "__main__":
