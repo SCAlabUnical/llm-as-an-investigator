@@ -5,7 +5,7 @@ import random
 from openai import OpenAI
 from google import genai
 
-print("Scegli il provider LLM:")
+print("Choose your LLM provider:")
 print("1 → Gemini")
 print("2 → OpenAI")
 
@@ -20,20 +20,20 @@ if scelta == "2":
     provider = "openai"
 
     client = OpenAI(
-        api_key="LA_TUA_OPENAI_KEY"
+        api_key="YOUR_OPENAI_KEY"
     )
 
-    MODELLO = "gpt-4.1-mini"
+    MODELLO = "CHOOSE_MODEL"
 
 else:
 
     provider = "gemini"
 
     client = genai.Client(
-        api_key="LA_TUA_GEMINI_KEY"
+        api_key="YOUR_GEMINI_KEY"
     )
 
-    MODELLO = "gemini-2.5-flash-lite"
+    MODELLO = "CHOOSE_MODEL"
 
 
 MAX_RETRY = 15
@@ -70,14 +70,14 @@ def chiama_llm(prompt):
 
                 return out.strip()
 
-            print(f"⚠️ OUTPUT VUOTO (tentativo {attempt + 1})")
+            print(f"⚠️ EMPTY OUTPUT (attempt {attempt + 1})")
 
         except Exception as e:
 
             msg = str(e)
 
             print("\n====================")
-            print("⚠️ ERRORE LLM")
+            print("⚠️ ERROR LLM")
             print("====================")
             print(msg)
 
@@ -93,6 +93,6 @@ def chiama_llm(prompt):
 
             time.sleep(wait)
 
-    print("\n❌ LLM FALLITO DEFINITIVAMENTE")
+    print("\n❌ LLM FAILED DEFINITELY")
 
     return None
